@@ -1,82 +1,79 @@
-# 💻 Kunj Desai — Portfolio Website
-Welcome to my personal portfolio website built with **React.js**, **Framer Motion**, and **modern UI design** principles.
-It showcases my work, projects, skills, and journey as a developer passionate about **AI, ML, and Web Technologies**.
 
-🌐 **Website:** [[kunj-Portfolio]](https://kunj-desai.netlify.app/)
+# 👨‍💻 Mukesh Jaiswal — Portfolio Website
 
-🖼️ **Screenshots**
-<img width="1902" height="994" alt="Screenshot 2025-11-03 232447" src="https://github.com/user-attachments/assets/6f78ceb0-363c-41e8-9eb9-a26fa814e8ac" />
-<img width="1894" height="992" alt="image" src="https://github.com/user-attachments/assets/8a6eeff0-3ebc-446c-a1ac-5f1a02279ac8" />
-<img width="1903" height="1044" alt="Screenshot 2025-11-04 153204" src="https://github.com/user-attachments/assets/355b1c4c-83e6-4465-9081-bff34bb3ad3b" />
+Welcome to my personal portfolio website 🚀  
+This portfolio showcases my skills, projects, certifications, and journey as an **MCA student & aspiring Full Stack (MERN) Developer**.
+
 ---
 
-## 🚀 Features
+## 🌐 Live Portfolio
+👉 https://YOUR-VERCEL-LINK.vercel.app
 
-* 🎨 **Modern UI/UX** with black-based aesthetic theme
-* ⚡ Smooth **Framer Motion** animations
-* 💼 **Projects, Resume, and Contact sections**
-* 🧠 Tech-focused portfolio highlighting AI/ML projects
-* 📨 Functional contact form powered by **EmailJS**
-* 🧩 Responsive design for all screen sizes
+---
+
+## 🧠 About Me
+I am **Mukesh Jaiswal**, an MCA student passionate about building modern, responsive, and performance-optimized web applications.  
+My goal is to grow as a **Full Stack Developer** and work on real-world impactful projects.
 
 ---
 
 ## 🛠️ Tech Stack
-
-| Category            | Tools / Libraries                        |
-| ------------------- | ---------------------------------------- |
-| **Frontend**        | React.js, HTML5, CSS3, JavaScript (ES6+) |
-| **Styling**         | Tailwind CSS / Custom CSS                |
-| **Animation**       | Framer Motion                            |
-| **Contact Form**    | EmailJS                                  |
-| **Version Control** | Git & GitHub                             |
-| **Deployment**      | Vercel / Netlify                         |
+- ⚛️ React (Vite)
+- 🎨 CSS / Tailwind CSS
+- 🎬 Framer Motion
+- 🧩 Lucide Icons
+- 🌐 HTML5 & JavaScript
+- 🔗 Git & GitHub
 
 ---
 
-## ⚙️ Setup Instructions
+## 📂 Portfolio Sections
+- Home
+- About
+- Skills
+- Projects
+- Certificates
+- Gallery
+- Blog
+- Resume
+- Contact
 
-To run this project locally:
+---
 
+## 📸 Screenshots
+
+### 🔹 Home Page
+<img src="./screenshots/home.png" alt="Home Page" width="100%" />
+
+### 🔹 About Section
+<img src="./screenshots/about.png" alt="About Section" width="100%" />
+
+### 🔹 Skills Section
+<img src="./screenshots/skills.png" alt="Skills Section" width="100%" />
+
+### 🔹 Projects Section
+<img src="./screenshots/projects.png" alt="Projects Section" width="100%" />
+
+### 🔹 Certificates Section
+<img src="./screenshots/certificates.png" alt="Certificates Section" width="100%" />
+
+### 🔹 Contact Page
+<img src="./screenshots/contact.png" alt="Contact Page" width="100%" />
+
+---
+
+## 🚀 Features
+- Fully responsive design 📱💻
+- Smooth animations using Framer Motion
+- Clean & modern UI
+- Component-based architecture
+- Optimized for performance
+
+---
+
+## 📁 Project Setup (Local)
 ```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/kunj2803/kunjdesai-portfolio.git
-
-# 2️⃣ Navigate to project directory
-cd kunjdesai-portfolio
-
-# 3️⃣ Install dependencies
+git clone https://github.com/mukesh417/mukesh-portfolio.git
+cd mukesh-portfolio
 npm install
-
-# 4️⃣ Run development server
-npm start or npm run dev
-```
-
-Now open [http://localhost:3000](http://localhost:3000) in your browser 🚀
-
----
-
-## 📬 Contact
-
-If you’d like to collaborate or just say hi 👋, feel free to reach out!
-
-* 📧 **Email:** [kunjd2803@gmail.com](mailto:kunjd2803@gmail.com)
-* 💼 **LinkedIn:** [linkedin.com/in/kunj-desai-07717b293](https://www.linkedin.com/in/kunj-desai-07717b293/)
-
----
-
-## 🌟 Deployment
-
-Deployed seamlessly on **Vercel** for continuous integration and fast CDN delivery.
-Every push to the `main` branch triggers an automatic rebuild and deployment.
-
----
-
-### 🏁 License
-
-This project is open source and available under the [MIT License](LICENSE).
-Feel free to fork, use, and build upon it ⭐
-
----
-
-> *“Showcasing my work and passion through technology 💻”*
+npm run dev
