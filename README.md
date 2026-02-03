@@ -45,9 +45,6 @@ My goal is to grow as a **Full Stack Developer** and work on real-world impactfu
 ### 🔹 Home Page
 <img src="./screenshots/home.png" alt="Home Page" width="100%" />
 
-### 🔹 About Section
-<img src="./screenshots/about.png" alt="About Section" width="100%" />
-
 ### 🔹 Skills Section
 <img src="./screenshots/skills.png" alt="Skills Section" width="100%" />
 
@@ -57,8 +54,7 @@ My goal is to grow as a **Full Stack Developer** and work on real-world impactfu
 ### 🔹 Certificates Section
 <img src="./screenshots/certificates.png" alt="Certificates Section" width="100%" />
 
-### 🔹 Contact Page
-<img src="./screenshots/contact.png" alt="Contact Page" width="100%" />
+
 
 ---
 
