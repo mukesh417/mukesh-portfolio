@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-
 export default function Resume() {
   return (
     <section className="container" style={{ padding: "60px 0" }}>
@@ -17,6 +16,7 @@ export default function Resume() {
           boxShadow: "0 0 25px rgba(0, 153, 255, 0.1)",
         }}
       >
+        {/* Heading */}
         <motion.h2
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -26,13 +26,8 @@ export default function Resume() {
           📄 Resume
         </motion.h2>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-          style={{ color: "#aaa", marginBottom: 25 }}
-        >
-          A quick glance at my journey.
+        <motion.p style={{ color: "#aaa", marginBottom: 25 }}>
+          A quick glance at my academic and development journey.
         </motion.p>
 
         {/* Profile Header */}
@@ -43,7 +38,6 @@ export default function Resume() {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            alignItems: "flex-start",
             flexWrap: "wrap",
             gap: 20,
             background: "rgba(255,255,255,0.03)",
@@ -52,20 +46,21 @@ export default function Resume() {
           }}
         >
           <div>
-            <h3 style={{ fontSize: 24, color: "#00b4ff", marginBottom: 4 }}>
-              👨‍💻 KUNJ D. DESAI
+            <h3 style={{ fontSize: 24, color: "#00b4ff" }}>
+              👨‍💻 Mukesh Jaiswal
             </h3>
-            <p style={{ margintop: 10, fontSize: 15, color: "#ccc" }}>
-              4th Year B.Tech — AI & Data Science | S.C.E.T, Sarvajanik University
+            <p style={{ fontSize: 15, color: "#ccc", marginTop: 6 }}>
+              MCA (2026) | Full Stack Developer (MERN)
             </p>
-            <p style={{ margin: "4px 0", fontSize: 14, color: "#aaa" }}>
-              📍 Jahangirpura, Surat, Gujarat
+            <p style={{ fontSize: 14, color: "#aaa" }}>
+              📍 Siddharth Nagar, Uttar Pradesh
             </p>
-            <p style={{ margin: "4px 0", fontSize: 14, color: "#aaa" }}>
-              ✉️ kunjd2803@gmail.com | 📞 +91 8758209508
+            <p style={{ fontSize: 14, color: "#aaa" }}>
+              ✉️ jaiswalmukesh267@gmail.com | 📞 +91 9569510512
             </p>
           </div>
 
+          {/* Summary */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             style={{
@@ -80,15 +75,19 @@ export default function Resume() {
           >
             <strong style={{ color: "#00b4ff" }}>Professional Summary:</strong>
             <p style={{ marginTop: 6, color: "#ccc" }}>
-              4th-year B.Tech AI student experienced in ML, DL, and computer vision.
-              Skilled in Python, TensorFlow, PyTorch, and Scikit-learn. Passionate about
-              building impactful AI systems and seeking opportunities to contribute to
-              real-world AI projects.
+              MCA student with strong foundation in Full Stack Web Development
+              using the MERN stack. Experienced in building responsive,
+              production-ready applications with authentication, REST APIs, and
+              database integration. <br /> <br />
+              <strong style={{ color: "#fff" }}>
+                Actively seeking entry-level Full Stack / Software Developer
+                roles.
+              </strong>
             </p>
           </motion.div>
         </motion.div>
 
-        {/* Education Section with Border Box */}
+        {/* Education */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -101,24 +100,17 @@ export default function Resume() {
             background: "rgba(255,255,255,0.03)",
           }}
         >
-          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>
-            🎓 Education
-          </h4>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, lineHeight: 1.8 }}>
+          <h4 style={{ fontSize: 20, color: "#00b4ff" }}>🎓 Education</h4>
+          <ul style={{ listStyle: "none", padding: 0, lineHeight: 1.8 }}>
             <li>
-              <strong>B.Tech in Artificial Intelligence & Data Science</strong> — S.C.E.T
-              (Sarvajanik University), 2022–2026 <br />
-              <span style={{ color: "#aaa" }}>GPA: 9.0</span>
+              <strong>Master of Computer Applications (MCA)</strong> — Kamla
+              Nehru Institute of Technology (KNIT), AKTU <br />
+              <span style={{ color: "#aaa" }}>2024 – 2026 | YGPA: 8.15</span>
             </li>
             <li style={{ marginTop: 8 }}>
-              <strong>12th Board — R.S.M. Poonawala Experimental School</strong> (Gujarat
-              Board, 2022) <br />
-              <span style={{ color: "#aaa" }}>Percentage: 78%</span>
-            </li>
-            <li style={{ marginTop: 8 }}>
-              <strong>10th Board — Ambika Niketan School</strong> (Gujarat Board, 2020)
-              <br />
-              <span style={{ color: "#aaa" }}>Percentage: 85%</span>
+              <strong>B.Sc (Hons.) in Computer Science</strong> — Babu Banarasi
+              Das University <br />
+              <span style={{ color: "#aaa" }}>2019 – 2022 | CGPA: 6.99</span>
             </li>
           </ul>
         </motion.div>
@@ -130,12 +122,15 @@ export default function Resume() {
           transition={{ delay: 0.8 }}
           style={{ marginTop: 40 }}
         >
-          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>💼 Projects</h4>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, lineHeight: 1.8 }}>
-            <li>1️⃣ Breast Cancer Detection from Mammograms using YOLO & CNN</li>
-            <li>2️⃣ DocuChat: Document Q&A Chatbot (Gemini API)</li>
-            <li>3️⃣ Indian Sign Language Interpreter (In Progress)</li>
-            <li>4️⃣ Mental Health Analyzer</li>
+          <h4 style={{ fontSize: 20, color: "#00b4ff" }}>💼 Projects</h4>
+          <ul style={{ listStyle: "none", padding: 0, lineHeight: 1.8 }}>
+            <li>
+              <strong>AI Image Generator App (Text → Image)</strong> — MERN
+              Stack
+              <br />• Full-stack SaaS app using React, Node.js, Express, MongoDB
+              <br />• ClipDrop API integration for image generation
+              <br />• JWT authentication, credit-based usage system
+            </li>
           </ul>
         </motion.div>
 
@@ -146,33 +141,30 @@ export default function Resume() {
           transition={{ delay: 1 }}
           style={{ marginTop: 40 }}
         >
-          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>⚙️ Skills</h4>
+          <h4 style={{ fontSize: 20, color: "#00b4ff" }}>⚙️ Skills</h4>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
             {[
-              "Python",
-              "C",
-              "C++",
-              "Java",
-              "TensorFlow",
-              "PyTorch",
-              "Scikit-learn",
-              "OpenCV",
-              "YOLO",
-              "Streamlit",
-              "React",
-              "MySQL",
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "React.js",
+              "Node.js",
+              "Express.js",
               "MongoDB",
+              "MySQL",
+              "REST APIs",
               "Git",
-              "NLP",
-              "Explainable AI (XAI)",
-              "Problem Solving",
-              "Teamwork",
-              "Adaptability",
-              "Creativity",
+              "GitHub",
+              "Data Structures & Algorithms (LeetCode, GeeksforGeeks)",
+              "C",
+              "Java",
+              "Python",
+              "SQL",
+              "Postman",
             ].map((skill) => (
               <motion.span
                 key={skill}
-                whileHover={{ scale: 1.1, backgroundColor: "rgba(0,180,255,0.3)" }}
+                whileHover={{ scale: 1.2 }}
                 style={{
                   background: "rgba(255,255,255,0.05)",
                   padding: "6px 12px",
@@ -186,10 +178,9 @@ export default function Resume() {
             ))}
           </div>
         </motion.div>
+
+        {/* Links */}
         <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.4 }}
           style={{
             display: "flex",
             justifyContent: "center",
@@ -197,34 +188,36 @@ export default function Resume() {
             marginTop: 40,
           }}
         >
-          {[
-            { name: "🏆 LeetCode", link: "https://leetcode.com/u/Kunj_2803/" },
-            { name: "💻 GitHub", link: "https://github.com/kunj2803" },
-            { name: "💼 LinkedIn", link: "https://www.linkedin.com/in/kunj-desai-07717b293/" },
-          ].map((site) => (
-            <motion.a
-              key={site.name}
-              href={site.link}
-              target="_blank"
-              rel="noreferrer"
-              whileHover={{ scale: 1.1, color: "#00b4ff" }}
-              style={{
-                color: "#ccc",
-                textDecoration: "none",
-                fontSize: 15,
-                fontWeight: 500,
-              }}
-            >
-              {site.name}
-            </motion.a>
-          ))}
+          <a
+            href="https://github.com/mukesh417"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#ccc" }}
+          >
+            💻 GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/mukesh-jaiswal-21a01b255/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#ccc" }}
+          >
+            💼 LinkedIn
+          </a>
+
+          <a
+            href="https://leetcode.com/u/mukesh__jaiswal/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#ccc" }}
+          >
+            🏆 LeetCode
+          </a>
         </motion.div>
 
-        {/* PDF Viewer */}
+        {/* PDF */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 }}
           style={{
             marginTop: 50,
             borderRadius: 12,
@@ -233,20 +226,18 @@ export default function Resume() {
           }}
         >
           <iframe
-            src="/resume.pdf"
-            title="Kunj Desai Resume"
+            src="/MyResume.pdf"
+            title="Mukesh Jaiswal Resume"
             style={{
               width: "100%",
               height: "650px",
               border: "none",
-              background: "#111",
             }}
           />
         </motion.div>
-
         {/* Download Button */}
         <motion.a
-          href="/resume.pdf"
+          href="/MyResume.pdf"
           download
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -264,8 +255,6 @@ export default function Resume() {
         >
           ⬇️ Download Resume
         </motion.a>
-
-
       </motion.div>
     </section>
   );

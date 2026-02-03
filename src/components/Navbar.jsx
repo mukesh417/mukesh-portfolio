@@ -64,12 +64,12 @@ export default function Navbar() {
               color: "var(--accent)",
             }}
           >
-            KD
+            MJ
           </motion.div>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <h1 style={{ margin: 0, fontSize: 14 }}>Kunj Desai</h1>
+            <h1 style={{ margin: 0, fontSize: 14 }}> <b>Mukesh Jaiswal</b> </h1>
             <div style={{ fontSize: 12, color: "var(--muted)" }}>
-              ML • AI • Developer
+              <b>Full Stack Developer</b>
             </div>
           </div>
         </div>

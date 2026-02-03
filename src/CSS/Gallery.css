@@ -84,9 +84,15 @@
   grid-template-columns: 1fr;
 }
 
-.photo-grid.multi {
+/* .photo-grid.multi {
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+} */
+ .photo-grid.multi {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* ✅ 2 columns only */
+  gap: 8px;
 }
+
 
 .photo-item img {
   width: 100%;
@@ -152,3 +158,10 @@
   transform: none;
 }
 
+.photo-item {
+  width: 100%;
+  aspect-ratio: 1 / 1;   /* ✅ SQUARE */
+  overflow: hidden;
+  border-radius: 10px;
+  background: #0f0f0f;
+}

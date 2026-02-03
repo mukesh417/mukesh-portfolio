@@ -7,31 +7,35 @@ export default function Blog() {
   const defaultPosts = [
     {
       id: 1,
-      title: "Why I Love Building AI Projects",
-      text: "Working on AI-based systems like mammogram cancer detection has taught me how impactful technology can be when applied to healthcare. Combining deep learning with real-world problems is my favorite way to innovate.",
+      title: "My Journey as an MCA Student",
+      text: "I am currently pursuing MCA and building my foundation in Full Stack Development. From HTML and CSS to JavaScript and React, every step is helping me move closer to my goal of becoming a skilled software developer.",
     },
     {
       id: 2,
-      title: "My Thoughts on Design & Aesthetics",
-      text: "I believe design should be a balance between functionality and emotion. Dark themes with minimalist layouts always inspire me to create something that feels personal and futuristic.",
+      title: "Why I Chose MERN Stack Development",
+      text: "I chose the MERN stack because it allows me to build complete end-to-end web applications using JavaScript. React on the frontend and Node.js on the backend feels powerful, modern, and industry-relevant.",
     },
     {
       id: 3,
-      title: "Balancing Tech and Creativity",
-      text: "As someone who codes and dances, I’ve realized creativity isn’t limited to art — it also lives in algorithms. Each project is like choreography for the mind.",
+      title: "Learning by Building Real Projects",
+      text: "I believe the best way to learn development is by building projects. From portfolio websites to small business sites, every project improves my logic, confidence, and problem-solving skills.",
     },
     {
       id: 4,
-      title: "The Beauty of Simple Code",
-      text: "Clean code isn’t just about fewer lines — it’s about clarity. Elegance in code feels like poetry to me — each function should have rhythm and purpose.",
+      title: "My Goal: A Career in IT",
+      text: "As a fresher, my goal is to secure a good role in the IT industry and continuously grow as a developer. I focus on writing clean code, understanding concepts deeply, and improving myself every day.",
     },
   ];
 
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    const savedVotes = JSON.parse(localStorage.getItem("kd_blog_votes") || "{}");
-    const votedByUser = JSON.parse(localStorage.getItem("kd_blog_voted") || "{}");
+    const savedVotes = JSON.parse(
+      localStorage.getItem("kd_blog_votes") || "{}",
+    );
+    const votedByUser = JSON.parse(
+      localStorage.getItem("kd_blog_voted") || "{}",
+    );
     const withVotes = defaultPosts.map((p) => ({
       ...p,
       agree: savedVotes[p.id]?.agree || 0,
@@ -42,21 +46,23 @@ export default function Blog() {
   }, []);
 
   function vote(id, type) {
-    const votedByUser = JSON.parse(localStorage.getItem("kd_blog_voted") || "{}");
+    const votedByUser = JSON.parse(
+      localStorage.getItem("kd_blog_voted") || "{}",
+    );
     if (votedByUser[id]) return;
 
     const next = posts.map((p) =>
-      p.id === id ? { ...p, [type]: p[type] + 1, userVote: type } : p
+      p.id === id ? { ...p, [type]: p[type] + 1, userVote: type } : p,
     );
     setPosts(next);
 
     const votes = Object.fromEntries(
-      next.map((p) => [p.id, { agree: p.agree, disagree: p.disagree }])
+      next.map((p) => [p.id, { agree: p.agree, disagree: p.disagree }]),
     );
     localStorage.setItem("kd_blog_votes", JSON.stringify(votes));
     localStorage.setItem(
       "kd_blog_voted",
-      JSON.stringify({ ...votedByUser, [id]: type })
+      JSON.stringify({ ...votedByUser, [id]: type }),
     );
   }
 
@@ -73,10 +79,10 @@ export default function Blog() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6 }}
       >
-        📝 My Blog
+        📝 My Thoughts & Journey
       </motion.h2>
       <p className="blog-sub">
-        Personal thoughts, experiences, and reflections — feel free to react!
+        My learning journey, goals, and experiences as an MCA student.
       </p>
 
       <div className="blog-grid">

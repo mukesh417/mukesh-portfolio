@@ -3,43 +3,105 @@ import { motion } from "framer-motion";
 import "./Skills.css";
 
 const SKILLS = [
-  { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-  { name: "C", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
-  { name: "C++", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
-  { name: "Java", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
-  { name: "HTML", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-  { name: "CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
-  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-  { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-  { name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
-  { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-  { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-  { name: "TensorFlow", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
-  { name: "PyTorch", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
-  { name: "OpenCV", logo: "https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg" },
+  {
+    name: "HTML",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  },
+  {
+    name: "CSS",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  },
+  {
+    name: "JavaScript",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  },
+  {
+    name: "React",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+
+  {
+    name: "Node.js",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  },
+  {
+    name: "Express",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  },
+
+  {
+    name: "MongoDB",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  },
+  {
+    name: "MySQL",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+  },
+
+  {
+    name: "Git",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
+  {
+    name: "GitHub",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+  },
+
+  {
+    name: "C",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+  },
+  {
+    name: "Java",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+  },
+  {
+    name: "Python",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+  },
 ];
 
 const ROWS = [
   [
-    { title: "Programming Languages", items: ["Python", "C", "C++", "Java"] },
-    { title: "Web Technologies", items: ["HTML", "CSS", "JavaScript", "React"] },
-    { title: "Databases & Tools", items: ["MySQL", "MongoDB", "Git"] },
-    { title: "Frameworks & Libraries", items: ["TensorFlow", "PyTorch", "OpenCV"] },
+    {
+      title: "Programming Languages",
+      items: ["JavaScript", "Java", "Python", "C" ,"SQL"],
+    },
+    {
+      title: "Frontend Development",
+      items: ["HTML5", "CSS3", "React.js", "Responsive Design"],
+    },
+    {
+      title: "Backend Development",
+      items: ["Node.js", "Express.js", "REST APIs", "JWT Authentication","MVC Architecture"],
+    },
+    {
+      title: "Frameworks & Libraries",
+      items: ["React.js", "Express.js", "Node.js"],
+    },
+    {
+      title: "Databases & Tools",
+      items: ["MongoDB", "MySQL", "Git", "GitHub","Postman","Thunder Client"],
+    },
   ],
   [
     {
-      title: "Core Concepts",
+      title: "Core Computer Science",
       items: [
         "Data Structures & Algorithms",
-        "Machine Learning",
-        "Deep Learning",
-        "YOLO Object Detection",
-        "Explainable AI (XAI)",
+        "Object-Oriented Programming",
+        "DBMS",
+        "Operating Systems",
       ],
     },
     {
       title: "Soft Skills",
-      items: ["Teamwork", "Problem Solving", "Creativity", "Adaptability", "Communication"],
+      items: [
+        "Problem Solving",
+        "Team Collaboration",
+        "Communication",
+        "Quick Learner",
+      ],
     },
   ],
 ];
@@ -63,7 +125,9 @@ export default function Skills() {
 
     circles.forEach((circle) => {
       const size = circle.offsetWidth;
-      let x, y, tries = 0;
+      let x,
+        y,
+        tries = 0;
       do {
         x = Math.random() * (rect.width - size - 20);
         y = Math.random() * (rect.height - size - 20);
@@ -77,13 +141,16 @@ export default function Skills() {
       const dx = (Math.random() - 0.5) * 100;
       const dy = (Math.random() - 0.5) * 100;
       circle.animate(
-        [{ transform: "translate(0, 0)" }, { transform: `translate(${dx}px, ${dy}px)` }],
+        [
+          { transform: "translate(0, 0)" },
+          { transform: `translate(${dx}px, ${dy}px)` },
+        ],
         {
           duration: 5000 + Math.random() * 2000,
           direction: "alternate",
           iterations: Infinity,
           easing: "ease-in-out",
-        }
+        },
       );
     });
   }, []);
@@ -100,7 +167,7 @@ export default function Skills() {
         <h2 className="text-5xl text-cyan-400 font-semibold mb-3">My Skills</h2>
         <div className="w-28 h-[2px] bg-cyan-400 mx-auto mb-6"></div>
         <p className="text-gray-400 text-lg max-w-xl mx-auto">
-          ✨ Technical expertise blended with creativity — explore my core competencies below.
+          🚀 Full-Stack (MERN) developer with strong MCA fundamentals and hands-on project experience.
         </p>
       </motion.div>
 
@@ -156,11 +223,13 @@ export default function Skills() {
                 width: "50px",
                 height: "50px",
                 objectFit: "contain",
-                filter: "drop-shadow(0 0 8px rgba(0,255,255,0.4)) brightness(1.2)",
+                filter:
+                  "drop-shadow(0 0 8px rgba(0,255,255,0.4)) brightness(1.2)",
                 marginBottom: "5px",
               }}
               whileHover={{
-                filter: "drop-shadow(0 0 12px rgba(0,255,255,0.9)) brightness(1.6)",
+                filter:
+                  "drop-shadow(0 0 12px rgba(0,255,255,0.9)) brightness(1.6)",
                 rotate: [0, 6, -6, 0],
                 transition: { duration: 0.5 },
               }}

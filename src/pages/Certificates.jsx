@@ -1,52 +1,52 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-// ✅ Certificates data (added URLs for View button)
+// ✅ Mukesh Jaiswal –  Certificates Data
 const CERTS = {
   tech: [
     {
-      title: "Flipkart Hackathon",
-      org: "Flipkart",
-      date: "2022",
-      img: "/certs/flipkart.jpg",
-      link: "/certs/flipkart.jpg",
+      title: "HTML, CSS, Java & JavaScript – Full Stack Programming",
+      org: "Udemy (Sara Academy)",
+      date: "Feb 2025",
+      img: "/certs/udemy-fullstack.png",
+      link: "/certs/udemy-fullstack.png",
     },
     {
-      title: "Solution Challenge",
-      org: "Google Developers",
-      date: "2023",
-      img: "/certs/hack2skill.png",
-      link: "/certs/hack2skill.png",
+      title: "Introduction to Cloud",
+      org: "IBM (via Cognitive Class)",
+      date: "Aug 2025",
+      img: "/certs/ibm-cloud.png",
+      link: "/certs/ibm-cloud.png",
     },
     {
-      title: "ADira",
-      org: "SCET AI Club",
-      date: "2025",
-      img: "/certs/adira.png",
-      link: "/certs/adira.png",
+      title: "Website Development Tutorial",
+      org: "Infosys Springboard",
+      date: "May 2025",
+      img: "/certs/infosys-webdev.png",
+      link: "/certs/infosys-webdev.png",
+    },
+    {
+      title: "Angular",
+      org: "Infosys Springboard",
+      date: "Jun 2025",
+      img: "/certs/infosys-angular.png",
+      link: "/certs/infosys-angular.png",
     },
   ],
   other: [
     {
-      title: "codathon",
-      org: "SCET tech fest",
+      title: "Hacktoberfest Open Source Contributor Badge",
+      org: "GitHub & DigitalOcean",
       date: "2025",
-      img: "/certs/codathon.png",
-      link: "/certs/codathon.png",
+      img: "/certs/achievement-badge.png",
+      link: "/certs/achievement-badge.png",
     },
     {
-      title: "bugbuzz",
-      org: "SCET tech fest",
+      title: "Tree Plantation & Environmental Contribution",
+      org: "Tree-Nation",
       date: "2025",
-      img: "/certs/bugbuzz.png",
-      link: "/certs/bugbuzz.png",
-    },
-    {
-      title: "Dataloom",
-      org: "SCET",
-      date: "2024",
-      img: "/certs/dataloom.png",
-      link: "/certs/dataloom.png",
+      img: "/certs/tree-nation.png",
+      link: "/certs/tree-nation.png",
     },
   ],
 };
@@ -57,8 +57,13 @@ export default function Certificates() {
 
   return (
     <section className="container" style={{ padding: "40px 0" }}>
-      <div className="card" style={{ background: "#111", borderRadius: 12, padding: 24 }}>
-        <h2 style={{ fontSize: "1.8rem", color: "#fff", marginBottom: 4 }}>Certificates 🏅</h2>
+      <div
+        className="card"
+        style={{ background: "#111", borderRadius: 12, padding: 24 }}
+      >
+        <h2 style={{ fontSize: "1.8rem", color: "#fff", marginBottom: 4 }}>
+          Certificates 🏅
+        </h2>
         <p className="lead" style={{ color: "#aaa" }}>
           Explore my certifications — technical & others.
         </p>

@@ -7,41 +7,102 @@ const IMAGES = {
   personal: [
     {
       id: 1,
-      caption: "Lost in the beauty of the misty forest 🌲🌫️",
-      photos: ["/gallery/matheran.jpg", "/gallery/matheran2.jpg"],
+      caption:
+        "Uttarakhand trip 🏔️🚣‍♂️ — peaceful mountains by day, thrilling river rafting by heart.",
+      photos: [
+        "/gallery/mukesh1.jpeg",
+        "/gallery/mukesh3.jpeg",
+        "/gallery/mukesh2.jpeg",
+        "/gallery/mukesh7.jpeg",
+      ],
     },
     {
       id: 2,
       caption:
-        "Weekend getaway to clear my head 🌄 Sometimes inspiration strikes when you’re away from the screen.",
-      photos: ["/gallery/lonawala.jpg", "/gallery/lonawala2.jpg"],
+        "Lost in the calm of Uttarakhand’s mountains 🏔️ — peace in the heights, lessons from the river 🌊",
+      photos: [
+        "/gallery/mukesh4.jpg",
+        "/gallery/mukesh5.jpeg",
+        "/gallery/mukesh10.jpg",
+        "/gallery/mukesh9.jpeg",
+      ],
     },
   ],
+  // projects: [
+  //   {
+  //     id: 1,
+  //     caption:
+  //       "It’s an AI-powered tool that understands what someone might be feeling based on their words.",
+  //     photos: ["/gallery/m.png", "/gallery/m2.jpeg"],
+  //   },
+
+  //   {
+  //     id: 1,
+  //     caption: "📂ProfileX - Smart Data Profiler + Preprocessor",
+  //     photos: [
+  //       "/gallery/profilex.jpeg",
+  //       "/gallery/profilex2.jpeg",
+  //       "/gallery/profilex3.jpeg",
+  //       "/gallery/profilex4.jpeg",
+  //     ],
+  //   },
+  // ],
   projects: [
     {
       id: 1,
       caption:
-        "It’s an AI-powered tool that understands what someone might be feeling based on their words.",
-      photos: ["/gallery/m.png", "/gallery/m2.jpeg"],
-    },
-    
-    {
-      id: 1,
-      caption:
-        "📂ProfileX - Smart Data Profiler + Preprocessor",
-      photos: ["/gallery/profilex.jpeg", "/gallery/profilex2.jpeg","/gallery/profilex3.jpeg", "/gallery/profilex4.jpeg"],
-    },
-  ],
-  achievements: [
-    {
-      id: 1,
-      caption: "Solved 1000 LeetCode questions 🏆!",
-      photos: ["/gallery/leet.jpeg"],
+        "Imagify 🧠 — AI-powered text-to-image generator with credit-based pricing system",
+      photos: [
+        "/gallery/imagify-hero.png",
+        "/gallery/imagify-1.png",
+        "/gallery/imagify-2.png",
+        "/gallery/imagify-3.png",
+      ],
     },
     {
       id: 2,
-      caption: "Technical Lead at SCET AI Club 🤖",
-      photos: ["/gallery/techlead.png"],
+      caption:
+        "WorkMapper 💼 — Skill-based hiring platform that bridges the gap between skills and opportunities | React • UI/UX",
+      photos: [
+        "/gallery/workmapper-hero.png",
+        "/gallery/workmapper-1.png",
+        "/gallery/workmapper-2.png",
+        "/gallery/workmapper-3.png",
+      ],
+    },
+  ],
+  achievements: [
+    // {
+    //   id: 1,
+    //   caption: "Solved 1000 LeetCode questions 🏆!",
+    //   photos: ["/gallery/leet.jpeg"],
+    // },
+    // },
+    {
+      id: 1,
+      caption:
+        "Hacktoberfest 2025 Supercontributor 🏆 — Successfully completed 6+ accepted pull requests in open-source projects",
+      photos: [
+        "/gallery/hacktoberfest-badge.png",
+        "/gallery/hacktoberfest-order.png",
+      ],
+    },
+    // {
+    //   id: 2,
+    //   caption: "Technical Lead at SCET AI Club 🤖",
+    //   photos: ["/gallery/techlead.png"],
+    // },
+    {
+      id: 2,
+      caption:
+        "Contributed to environmental sustainability 🌱 — Earned Tree-Nation certificate by planting a tree through Hacktoberfest",
+      photos: ["/gallery/tree-nation.png", "/gallery/tree-certificate.png"],
+    },
+    {
+      id: 3,
+      caption:
+        "Actively practicing Data Structures & Algorithms on LeetCode and GeeksforGeeks to strengthen problem-solving skills 💡",
+      photos: ["/gallery/leetcode-profile.png", "/gallery/gfg-profile.png"],
     },
   ],
 };
