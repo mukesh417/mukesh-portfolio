@@ -101,7 +101,8 @@ export default function Projects() {
         style={{
           background: "rgba(255,255,255,0.03)",
           borderRadius: 16,
-          padding: 30,
+          justifyContent: "center",
+          textAlign: "center"
         }}
       >
         <motion.h2
@@ -121,7 +122,8 @@ export default function Projects() {
           style={{
             display: "grid",
             gap: 24,
-            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+            justifyContent: "center",
+            textAlign: "center"
           }}
         >
           {PROJECTS.map((p, idx) => (
@@ -179,6 +181,7 @@ export default function Projects() {
                   style={{
                     display: "flex",
                     flexWrap: "wrap",
+                    justifyContent: "center",
                     gap: 6,
                     marginBottom: 10,
                   }}
@@ -203,8 +206,9 @@ export default function Projects() {
                 <div
                   style={{
                     display: "flex",
-                    justifyContent: "flex-end",
-                    gap: 10,
+                    flexWrap: "wrap",
+                    justifyContent: "center",
+                    gap: 15,
                   }}
                 >
                   <motion.a
@@ -216,12 +220,12 @@ export default function Projects() {
                     style={{
                       display: "flex",
                       alignItems: "center",
-                      gap: 5,
+                      gap: 6,
                       background: "rgba(255,255,255,0.05)",
                       color: "#0ea5e9",
-                      padding: "6px 12px",
+                      padding: "8px 16px",
                       borderRadius: 8,
-                      fontSize: 13,
+                      fontSize: 14,
                       border: "1px solid rgba(0,255,255,0.1)",
                       textDecoration: "none",
                     }}
@@ -237,12 +241,12 @@ export default function Projects() {
                     style={{
                       display: "flex",
                       alignItems: "center",
-                      gap: 5,
+                      gap: 6,
                       background: "linear-gradient(90deg, #06b6d4, #0891b2)",
                       color: "#fff",
-                      padding: "6px 12px",
+                      padding: "8px 16px",
                       borderRadius: 8,
-                      fontSize: 13,
+                      fontSize: 14,
                       textDecoration: "none",
                     }}
                   >

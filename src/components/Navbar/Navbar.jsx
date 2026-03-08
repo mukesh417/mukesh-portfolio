@@ -22,8 +22,7 @@ export default function Navbar() {
 
   // Check if links overflow nav width (to show hamburger)
   const checkOverflow = () => {
-    if (!navRef.current || !linksRef.current) return;
-    setShowButton(linksRef.current.scrollWidth > navRef.current.offsetWidth);
+    setShowButton(window.innerWidth < 1024);
   };
 
   useEffect(() => {
@@ -164,9 +163,9 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && showButton && (
           <motion.div
-            initial={{ opacity: 0, y: -15 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -15 }}
+            initial={{ opacity: 0, y: "-100%" }}
+            animate={{ opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } }}
+            exit={{ opacity: 0, y: "-100%", transition: { duration: 0.8, ease: "easeInOut" } }}
             style={{
               position: "fixed",
               top: 0,
@@ -199,23 +198,31 @@ export default function Navbar() {
               ✕
             </button>
 
-            {links.map((l) => (
-              <NavLink
+            {links.map((l, index) => (
+              <motion.div
                 key={l.to}
-                to={l.to}
-                onClick={() => setIsOpen(false)}
-                style={{
-                  color: "#fff",
-                  textDecoration: "none",
-                  padding: "1rem 0",
-                  width: "100%",
-                  textAlign: "center",
-                  fontSize: 16,
-                  borderBottom: "1px solid rgba(255,255,255,0.05)",
-                }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0, transition: { duration: 0.4, delay: 0.1 + index * 0.05, ease: "easeOut" } }}
+                exit={{ opacity: 0, y: 20, transition: { duration: 0.3, ease: "easeInOut" } }}
+                style={{ width: "100%" }}
               >
-                {l.label}
-              </NavLink>
+                <NavLink
+                  to={l.to}
+                  onClick={() => setIsOpen(false)}
+                  style={{
+                    color: "#fff",
+                    textDecoration: "none",
+                    padding: "1rem 0",
+                    width: "100%",
+                    display: "block",
+                    textAlign: "center",
+                    fontSize: 16,
+                    borderBottom: "1px solid rgba(255,255,255,0.05)",
+                  }}
+                >
+                  {l.label}
+                </NavLink>
+              </motion.div>
             ))}
           </motion.div>
         )}

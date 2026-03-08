@@ -65,7 +65,7 @@ const ROWS = [
   [
     {
       title: "Programming Languages",
-      items: ["JavaScript", "Java", "Python", "C" ,"SQL"],
+      items: ["JavaScript", "Java", "Python", "C", "SQL"],
     },
     {
       title: "Frontend Development",
@@ -73,7 +73,7 @@ const ROWS = [
     },
     {
       title: "Backend Development",
-      items: ["Node.js", "Express.js", "REST APIs", "JWT Authentication","MVC Architecture"],
+      items: ["Node.js", "Express.js", "REST APIs", "JWT Authentication", "MVC Architecture"],
     },
     {
       title: "Frameworks & Libraries",
@@ -81,7 +81,7 @@ const ROWS = [
     },
     {
       title: "Databases & Tools",
-      items: ["MongoDB", "MySQL", "Git", "GitHub","Postman","Thunder Client"],
+      items: ["MongoDB", "MySQL", "Git", "GitHub", "Postman", "Thunder Client"],
     },
   ],
   [
@@ -179,8 +179,6 @@ export default function Skills() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
         style={{
-          width: "100%",
-          height: "550px",
           borderRadius: "25px",
           background: "radial-gradient(circle at 50% 50%, #0a0a0a, #101010)",
           overflow: "hidden",

@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
-import "../CSS/Contact.css";
-import "../index.css";
+import "./Contact.css";
+import "../../index.css";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -79,10 +79,10 @@ export default function Contact() {
     { img: "/facebook.png", title: "Facebook", link: "https://www.facebook.com/mukesh.jaiswal.73594479/" },
   ];
   console.log(
-  import.meta.env.VITE_EMAILJS_SERVICE_ID,
-  import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-  import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-);
+    import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+  );
 
 
   return (

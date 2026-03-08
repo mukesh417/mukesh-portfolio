@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ThumbsUp, ThumbsDown } from "lucide-react";
-import "./blog.css";
+import "./Blog.css";
 
 export default function Blog() {
   const defaultPosts = [
@@ -107,9 +107,8 @@ export default function Blog() {
                 disabled={!!p.userVote}
                 whileTap={{ scale: 0.85 }}
                 whileHover={{ scale: 1.15 }}
-                className={`vote-btn-circle agree ${
-                  p.userVote === "agree" ? "active" : ""
-                }`}
+                className={`vote-btn-circle agree ${p.userVote === "agree" ? "active" : ""
+                  }`}
               >
                 <ThumbsUp size={20} />
                 <motion.span
@@ -127,9 +126,8 @@ export default function Blog() {
                 disabled={!!p.userVote}
                 whileTap={{ scale: 0.85 }}
                 whileHover={{ scale: 1.15 }}
-                className={`vote-btn-circle disagree ${
-                  p.userVote === "disagree" ? "active" : ""
-                }`}
+                className={`vote-btn-circle disagree ${p.userVote === "disagree" ? "active" : ""
+                  }`}
               >
                 <ThumbsDown size={20} />
                 <motion.span

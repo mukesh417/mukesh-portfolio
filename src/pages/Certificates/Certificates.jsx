@@ -69,7 +69,7 @@ export default function Certificates() {
         </p>
 
         {/* Tabs */}
-        <div style={{ display: "flex", gap: 10, marginTop: 16 }}>
+        <div style={{ display: "flex", gap: 10, marginTop: 16,justifyContent:"center",textAlign:"center" }}>
           {["tech", "other"].map((t) => (
             <button
               key={t}

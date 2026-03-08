@@ -1,6 +1,6 @@
 /* ---------- Header: smaller, left-aligned, no big gaps ---------- */
 .skills-header {
-  text-align: left;
+  text-align: center;
   margin: 10px 0 12px 4%;
   padding: 0;
   max-width: calc(100% - 8%);
@@ -26,6 +26,7 @@
   font-size: 0.95rem;
   margin: 0;
   padding: 0;
+  margin-top:10px;
 }
 
 /* ---------- Orb area: narrower margins and reduced height ---------- */
@@ -114,4 +115,18 @@
   color: #b0b0b0;
   margin-bottom: 6px;
   transition: color 0.2s, transform 0.2s;
+}
+
+@media (max-width: 768px) {
+  .skills-stage {
+    height: 280px;
+  }
+
+  .skills-row {
+    gap: 20px;
+  }
+
+  .skill-box {
+    width: 100%;
+  }
 }

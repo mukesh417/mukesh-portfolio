@@ -55,8 +55,11 @@ export default function Resume() {
             <p style={{ fontSize: 14, color: "#aaa" }}>
               📍 Siddharth Nagar, Uttar Pradesh
             </p>
-            <p style={{ fontSize: 14, color: "#aaa" }}>
-              ✉️ jaiswalmukesh267@gmail.com | 📞 +91 9569510512
+            <p style={{ fontSize: 13, color: "#aaa" }}>
+              ✉️ jaiswalmukesh267@gmail.com
+            </p>
+            <p style={{ fontSize: 13, color: "#aaa" }}>
+              📞 +91 9569510512
             </p>
           </div>
 

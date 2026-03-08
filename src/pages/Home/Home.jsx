@@ -1,16 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "../CSS/Home.css";
-import "../index.css";
+import "./Home.css";
+import "../../index.css";
 
 // 🖼️ Import Assets
-import photo from "../../public/photo.jpg";
-import githubLogo from "../../public/github.png";
-import linkedinLogo from "../../public/linkedin.png";
-import gmailLogo from "../../public/gmail.png";
-import whatsappLogo from "../../public/whatsapp.png";
-import instagramLogo from "../../public/insta.png";
-import facebookLogo from "../../public/facebook.png";
+import photo from "../../../public/photo.jpg";
+import githubLogo from "../../../public/github.png";
+import linkedinLogo from "../../../public/linkedin.png";
+import gmailLogo from "../../../public/gmail.png";
+import whatsappLogo from "../../../public/whatsapp.png";
+import instagramLogo from "../../../public/insta.png";
+import facebookLogo from "../../../public/facebook.png";
 
 export default function Home() {
   const professions = [

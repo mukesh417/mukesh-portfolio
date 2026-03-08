@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-import "../CSS/Gallery.css";
+import "./Gallery.css";
 
 const IMAGES = {
   personal: [
@@ -208,9 +208,8 @@ export default function Gallery() {
             >
               <p className="caption">{post.caption}</p>
               <div
-                className={`photo-grid ${
-                  post.photos.length > 1 ? "multi" : "single"
-                }`}
+                className={`photo-grid ${post.photos.length > 1 ? "multi" : "single"
+                  }`}
               >
                 {post.photos.map((src, i) => (
                   <motion.div
