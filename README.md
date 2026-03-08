@@ -1,4 +1,3 @@
-
 # 👨‍💻 Mukesh Jaiswal — Portfolio Website
 
 Welcome to my personal portfolio website 🚀  
@@ -19,7 +18,7 @@ My goal is to grow as a **Full Stack Developer** and work on real-world impactfu
 
 ## 🛠️ Tech Stack
 - ⚛️ React (Vite)
-- 🎨 CSS / Tailwind CSS
+- 🎨 Custom Vanilla CSS
 - 🎬 Framer Motion
 - 🧩 Lucide Icons
 - 🌐 HTML5 & JavaScript
@@ -40,29 +39,11 @@ My goal is to grow as a **Full Stack Developer** and work on real-world impactfu
 
 ---
 
-## 📸 Screenshots
-
-### 🔹 Home Page
-<img src="./screenshots/home.png" alt="Home Page" width="100%" />
-
-### 🔹 Skills Section
-<img src="./screenshots/skills.png" alt="Skills Section" width="100%" />
-
-### 🔹 Projects Section
-<img src="./screenshots/projects.png" alt="Projects Section" width="100%" />
-
-### 🔹 Certificates Section
-<img src="./screenshots/certificates.png" alt="Certificates Section" width="100%" />
-
-
-
----
-
 ## 🚀 Features
 - Fully responsive design 📱💻
 - Smooth animations using Framer Motion
 - Clean & modern UI
-- Component-based architecture
+- **Strict Folder-Per-Component Architecture** for clean code organization
 - Optimized for performance
 
 ---
@@ -73,3 +54,4 @@ git clone https://github.com/mukesh417/mukesh-portfolio.git
 cd mukesh-portfolio
 npm install
 npm run dev
+```
