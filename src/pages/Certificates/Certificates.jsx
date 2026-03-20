@@ -25,13 +25,21 @@ const CERTS = {
       img: "/certs/infosys-webdev.png",
       link: "/certs/infosys-webdev.png",
     },
+    // {
+    //   title: "Angular",
+    //   org: "Infosys Springboard",
+    //   date: "Jun 2025",
+    //   img: "/certs/infosys-angular.png",
+    //   link: "/certs/infosys-angular.png",
+    // },
     {
-      title: "Angular",
-      org: "Infosys Springboard",
-      date: "Jun 2025",
-      img: "/certs/infosys-angular.png",
-      link: "/certs/infosys-angular.png",
+      title: "Responsive Web Design",
+      org: "freeCodeCamp",
+      date: "Mar 2026",
+      img: "/certs/fcc-responsive-web-design.png",
+      link: "/certs/fcc-responsive-web-design.png",
     },
+
   ],
   other: [
     {
@@ -69,7 +77,7 @@ export default function Certificates() {
         </p>
 
         {/* Tabs */}
-        <div style={{ display: "flex", gap: 10, marginTop: 16,justifyContent:"center",textAlign:"center" }}>
+        <div style={{ display: "flex", gap: 10, marginTop: 16, justifyContent: "center", textAlign: "center" }}>
           {["tech", "other"].map((t) => (
             <button
               key={t}
